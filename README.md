@@ -3,7 +3,8 @@
 <div align="center">
 
 
-[![Star on GitHub](https://img.shields.io/github/stars/ruvnet/claude-flow?style=for-the-badge&logo=github&color=gold)](https://github.com/ruvnet/claude-flow)
+[![CI](https://github.com/QUXTech/claude-flow/actions/workflows/ci.yml/badge.svg)](https://github.com/QUXTech/claude-flow/actions/workflows/ci.yml)
+[![Star on GitHub](https://img.shields.io/github/stars/QUXTech/claude-flow?style=for-the-badge&logo=github&color=gold)](https://github.com/QUXTech/claude-flow)
 [![Downloads](https://img.shields.io/npm/dt/claude-flow?style=for-the-badge&logo=npm&color=blue&label=Downloads)](https://www.npmjs.com/package/claude-flow)
 [![Latest Release](https://img.shields.io/npm/v/claude-flow/alpha?style=for-the-badge&logo=npm&color=green&label=v3.0.0-alpha)](https://www.npmjs.com/package/claude-flow)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-SDK%20Integrated-green?style=for-the-badge&logo=anthropic)](https://github.com/ruvnet/claude-flow)
