@@ -2,8 +2,11 @@
 node_modules/
 
 # Build outputs
-dist/
 *.tsbuildinfo
+
+# Exclude dist except for v3 packages (compiled distribution)
+/dist/
+!v3/@claude-flow/*/dist/
 
 # IDE
 .idea/
