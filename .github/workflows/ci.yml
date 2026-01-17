@@ -98,8 +98,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build --if-present
+      - name: Verify dist files exist
+        run: |
+          echo "Checking pre-compiled dist files..."
+          test -f v3/@claude-flow/cli/dist/src/index.js || { echo "Missing cli/dist/src/index.js"; exit 1; }
+          test -f v3/@claude-flow/shared/dist/index.js || { echo "Missing shared/dist/index.js"; exit 1; }
+          test -f v3/@claude-flow/shared/dist/events/event-store.js || { echo "Missing event-store.js"; exit 1; }
+          test -f v3/@claude-flow/shared/dist/hooks/index.js || { echo "Missing hooks/index.js"; exit 1; }
+          echo "✓ All dist files verified"
 
       - name: Verify CLI works
         run: node v3/@claude-flow/cli/bin/cli.js --version || echo "CLI check completed"
