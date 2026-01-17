@@ -39,3 +39,6 @@ coverage/
 .cache/
 .npm/
 .eslintcache
+
+# Runtime data
+.claude-flow/
