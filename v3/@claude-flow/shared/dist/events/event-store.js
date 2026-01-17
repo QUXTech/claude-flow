@@ -51,9 +51,15 @@ export class EventStore extends EventEmitter {
                 : (file) => {
                     // Try local node_modules paths first, then fall back to CDN
                     const localPaths = [
+                        // Relative to current working directory (CI/development)
+                        `./node_modules/sql.js/dist/${file}`,
+                        `node_modules/sql.js/dist/${file}`,
+                        // Relative to this file using import.meta.url
                         new URL(`../../node_modules/sql.js/dist/${file}`, import.meta.url).pathname,
                         new URL(`../../../node_modules/sql.js/dist/${file}`, import.meta.url).pathname,
                         new URL(`../../../../node_modules/sql.js/dist/${file}`, import.meta.url).pathname,
+                        new URL(`../../../../../node_modules/sql.js/dist/${file}`, import.meta.url).pathname,
+                        // Global npm install location
                         `/usr/lib/node_modules/claude-flow/node_modules/sql.js/dist/${file}`,
                     ];
                     // Check if any local path exists
