@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ruv-swarm",
+      "mcp__claude-flow@alpha",
+      "mcp__flow-nexus",
+      "WebFetch(domain:www.npmjs.com)"
+    ],
+    "deny": []
+  }
+}
