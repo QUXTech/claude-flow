@@ -39,7 +39,8 @@
   },
   "overrides": {
     "hono": ">=4.11.4",
-    "tar": ">=7.5.3"
+    "tar": ">=7.5.3",
+    "protobufjs@<7.5.5": "7.5.5"
   },
   "devDependencies": {
     "@ruvector/attention": "^0.1.3",
