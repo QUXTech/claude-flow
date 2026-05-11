@@ -39,7 +39,11 @@
   },
   "overrides": {
     "hono": ">=4.11.4",
-    "tar": ">=7.5.3"
+    "tar": ">=7.5.3",
+    "protobufjs": "^7.5.5",
+    "@opentelemetry/auto-instrumentations-node": "^0.75.0",
+    "@opentelemetry/exporter-prometheus": "^0.217.0",
+    "@opentelemetry/sdk-node": "^0.217.0"
   },
   "devDependencies": {
     "@ruvector/attention": "^0.1.3",
